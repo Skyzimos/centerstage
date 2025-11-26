@@ -36,6 +36,12 @@
 				setTimeout(() => {
 					window.location.href = `${prefix}transaction-complete/`
 				}, 1500)
+			} else if (sessionStorage.getItem('program')) {
+				sessionStorage.clear()
+				
+				setTimeout(() => {
+					window.location.href = `https://skyzimos.github.io/torch/program`
+				}, 1500)
 			} else if (sessionStorage.getItem('selection-menu')) {
 				sessionStorage.clear()
 				
